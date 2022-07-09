@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* font-family: sans-serif; */
+
+
+        }
+
+        .brand ul li {
+            list-style: none;
+        }
+
+        .brand ul li a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .brand ul li {
+            display: inline-block;
+            margin-right: 10px;
+
+        }
+
+        .support ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .support ul li a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .brand {
+            display: flex;
+            /* padding: 5px 10px 5px; */
+            gap: 40px;
+        }
+
+        .brand h1 {
+            font-size: 32px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 5px 10px;
+            position: sticky;
+            /* position: sticky; */
+        }
+
+        .brand ul li a:hover {
+            padding: 5px;
+            border: 2px 2px 2px 2px solid #000;
+            background-color: #000;
+            color: #fff;
+            border-radius: 6px;
+            transition: width .5s;
+        }
+
+        .support ul li a:hover {
+            padding: 5px;
+            border: 2px 2px 2px 2px solid #000;
+            background-color: #000;
+            color: #fff;
+            border-radius: 6px;
+            transition: width .5s;
+        }
+
+        .list {
+            height: 40px;
+            display: none;
+        }
+
+        .support ul li img {
+            height: 23px;
+        }
+
+        .samsung-background {
+            background: url(samsung-bg.jpg);
+            background-size: cover;
+            height: 92vh;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        .samsung-background-1 h1 {
+            font-size: 52px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #fff;
+        }
+
+        .samsung-background-1 h4 {
+            font-size: 22px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #fff;
+        }
+
+        .samsung-background-1 a {
+            padding: 6px 15px 6px;
+            background-color: #fff;
+            border-radius: 9px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            width: 9%;
+        }
+
+        .samsung-background-1 a:hover {
+            background-color: #ced4da;
+        }
+
+
+        .price img {
+            height: 20px;
+        }
+
+        .price {
+            display: flex;
+            margin-left: -2%;
+            /* margin-bottom: 4%; */
+        }
+
+        .brand {
+            display: flex;
+            /* gap: -120px; */
+        }
+
+        .samsung-background-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 4%;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 80%);
+        }
+
+        .heading h1 {
+            font-size: 52px;
+            font-weight: 600;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            justify-content: center;
+
+        }
+
+        .heading {
+            display: flex;
+            margin-top: 5%;
+            justify-content: center;
+        }
+
+        .flex-1 ul {
+            display: flex;
+            gap: 3%;
+            justify-content: center;
+            margin-top: 3%;
+        }
+
+        .flex-1 ul li {
+
+            list-style: none;
+        }
+
+        .flex-1 ul li a {
+            text-decoration: none;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #777;
+        }
+
+        .flex-1 ul li a:hover {
+            color: #ced4da;
+        }
+
+
+        .flex-1 ul li:first-child {
+            border-bottom: 3px solid black;
+        }
+
+        .galaxy-M53 {
+            padding: 10%;
+            background: url(galaxyM53.jpg);
+            border-radius: 10px;
+            max-width: 25%;
+            max-height: 50%;
+            margin-top: 4%;
+        }
+
+        .galaxy-M53:hover h3 {
+            display: none;
+        }
+
+        .galaxy-M53:hover a {
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .galaxy-M53-heading-2 a {
+            padding: 2%;
+            text-decoration: none;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            display: none;
+        }
+
+        .galaxy-M53-heading-2 h1 {
+            font-size: 22px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #343a40;
+        }
+
+        .galaxy-M53-heading-2 h3 {
+            font-size: 16px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #777;
+        }
+
+        .galaxy-M53-heading-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            /* top: 50%; */
+            /* left: 50%; */
+            /* transform: translate(0, 80%); */
+            margin-top: 120px;
+
+
+        }
+
+        .laptops {
+            padding: 5%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url('/laptop.jpeg');
+            border-radius: 5px;
+            background-repeat: no-repeat;
+            max-height: 200px;
+            max-width: 160px;
+        }
+
+        .laptops h1 {
+            font-size: 16px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #fff;
+        }
+
+        .laptops h3 {
+            font-size: 14px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            /* margin-top: 40%; */
+            color: #343a40;
+        }
+
+        .laptops-content {
+            display: flex;
+            flex-direction: column;
+            transform: translate(0%, 50%);
+            gap: 5px;
+            justify-content: center;
+            /* width: 30%; */
+        }
+
+        .laptops-content a {
+            display: none;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            padding: 2%;
+
+        }
+
+        .laptops:hover a {
+            background-color: black;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 12px;
+            display: block;
+            text-decoration: none;
+            width: 45%;
+        }
+
+        .laptops:hover h3 {
+            display: none;
+
+        }
+
+        .Galaxy-F13 {
+            padding: 5%;
+            background: url(/F13.jpg);
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            max-height: 300px;
+            max-width: 300px;
+        }
+
+        .Galaxy-F13 h1 {
+            font-size: 14px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .Galaxy-F13 h3 {
+            font-size: 12px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .Galaxy-F13-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            /* margin-bottom: 0%; */
+            justify-content: center;
+            margin-top: 120px;
+        }
+
+        .Galaxy-F13-content a {
+            display: none;
+            padding: 2%;
+            text-decoration: none;
+        }
+
+        .Galaxy-F13:hover a {
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            display: block;
+            width: 45%;
+            border-radius: 5px;
+        }
+
+        .Galaxy-F13:hover h3 {
+            display: none;
+        }
+
+        .samsung-live {
+            padding: 5%;
+            background: url(/smasunglive.jpg);
+            border-radius: 5px;
+            max-height: 300px;
+            max-width: 300px;
+            background-repeat: no-repeat;
+        }
+
+        .samsung-live-content h1 {
+            font-size: 14px;
+        }
+
+        .samsung-live-content h3 {
+            font-size: 12px;
+        }
+
+        .samsung-live-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 150px;
+        }
+
+        .samsung-live-content a {
+            display: none;
+            padding: 2%;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .samsung-live:hover a {
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            display: block;
+            width: 45%;
+        }
+
+        .samsung-live:hover h3 {
+            display: none;
+        }
+
+        /* .crystal-4K { */
+        /* padding: 5%; */
+        /* background: url(/samsungTV.jpeg); */
+        /* background-size: cover; */
+        /* max-width: 10%; */
+        /* max-height: 20%; */
+        /* border-radius: 5px; */
+        /* } */
+
+        /* .crystal-4k-content h1 { */
+        /* font-size: 14px; */
+        /* } */
+
+        /* .crystal-4k-content h3 { */
+        /* font-size: 12px; */
+        /* color: #777; */
+        /* } */
+
+        /* .crystal-4k-content-1:hover h3 { */
+        /* display: none; */
+        /* } */
+
+        /* .crystal-4k-content { */
+        /* display: flex; */
+        /* background: url(/samsungTV.jpeg); */
+        /* max-width: 200px; */
+        /* max-height: 1000px; */
+        /* padding: 2%; */
+        /* background-repeat: no-repeat; */
+        /* border-radius: 5px; */
+        /* flex-direction: column; */
+        /* margin-top: 30px; */
+        /* justify-content: center; */
+
+        /* } */
+
+        /* .crystal-4k-content-1 { */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* margin-top: 10%; */
+        /* } */
+
+        /* .crystal-4k-content a { */
+        /* display: none; */
+        /* font-size: 12px; */
+        /* text-decoration: none; */
+        /* } */
+
+        /* .crystal-4k-content:hover a { */
+        /* display: block; */
+        /* border-radius: 5px; */
+        /* width: 4%; */
+        /* height: 1%; */
+        /* padding: 1%; */
+        /* background-color: #000; */
+        /* color: #fff; */
+        /* } */
+
+        /* .crystal-4k-content:hover h3 { */
+        /* display: none; */
+        /* } */
+
+        .flex-2 {
+            display: flex;
+            gap: 2%;
+        }
+
+        .flex-3 {
+            display: flex;
+            gap: 4%;
+
+        }
+
+        .flex-4 {
+            display: flex;
+            flex-direction: column;
+            gap: 2%;
+        }
+
+        .flex-5 {
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+            margin-top: 10%;
+        }
+
+        .heading-1 h1 {
+            font-size: 52px;
+            font-weight: 500;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+
+        }
+
+        .heading-1 ul {
+            display: flex;
+            gap: 4%;
+            justify-content: center;
+            margin: 2%;
+        }
+
+        .heading-1 ul li {
+            list-style: none;
+        }
+
+        .heading-1 ul li a:hover {
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #777;
+        }
+
+        .heading-1 ul li:first-child {
+            border-bottom: 2px solid black;
+        }
+
+        .heading-1 ul li a {
+            text-decoration: none;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            /* color: #777; */
+            color: #000;
+        }
+
+        .heading-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+            justify-content: center;
+        }
+
+
+        .fold-img {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 280px 280px;
+            grid-template-rows: 220px 220px;
+            justify-content: center;
+            transition: 1s;
+        }
+
+        .fold-img:hover {
+            transform: scale(.9);
+            z-index: 2;
+        }
+
+        .fold-description h1 {
+            font-size: 52px;
+            font-weight: 400;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            display: flex;
+            gap: 5%;
+            justify-content: center;
+        }
+
+        .button a:nth-child(1) {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 1.2%;
+            background-color: black;
+            border-radius: 10%;
+        }
+
+        .button a:nth-child(2) {
+            color: #000;
+            text-decoration: none;
+            padding: 1.2%;
+            background-color: #ced4da;
+            border-radius: 10%;
+            border-bottom: 2px solid black;
+            font-size: 18px;
+        }
+
+        .button {
+            display: flex;
+            gap: 2%;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            margin-top: 2%;
+            justify-content: center;
+        }
+
+        .TV-AV {
+            background-image: url(/TV-AV.jpeg);
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            /* max-width: 100%; */
+            height: 100vh;
+            margin-top: 5%;
+        }
+
+        .TV-AV-content-1 h1 {
+            font-size: 52px;
+            font-weight: 700;
+            padding-top: 2%;
+            font-family: 'SamsungSharpSans', arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .TV-AV ul {
+            display: flex;
+            gap: 6%;
+            justify-content: center;
+        }
+
+        .TV-AV-content-1 ul li {
+            list-style: none;
+        }
+
+        .TV-AV-content-1 ul li:nth-child(1) {
+            width: 6%;
+        }
+
+        .TV-AV-content-1 ul li:nth-child(2) {
+            width: 9%;
+        }
+
+        .TV-AV-content-1 ul li:nth-child(3) {
+            width: 10%;
+        }
+
+        .TV-AV-content-1 ul li:nth-child(4) {
+            width: 8%;
+        }
+
+        .TV-AV-content-1 ul li:nth-child(5) {
+            width: 8%;
+        }
+
+        .TV-AV-content-1 ul li a {
+            text-decoration: none;
+            font-weight: 700;
+            justify-content: center;
+            font-family: 'SamsungSharpSans', arial, sans-serif;
+            text-align: center;
+            color: black;
+            padding-top: 8%;
+            padding-bottom: 8%;
+            padding-left: 2%;
+            padding-right: 2%;
+            font-size: 18px;
+        }
+
+        .TV-AV-content-1 ul li:nth-child(1) {
+            border-bottom: 2px solid black;
+        }
+
+        .TV-AV-content-1 ul li:hover {
+            background-color: #fff;
+            color: #777;
+            border-radius: 10px;
+        }
+
+        .TV-AV-content h1 {
+            font-size: 42px;
+            display: flex;
+            justify-content: center;
+            color: #000;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .TV-AV-content p {
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            font-size: 16px;
+            justify-content: center;
+            color: #000;
+            display: flex;
+        }
+
+        .TV-AV-content a {
+            padding: 1.1%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            font-size: 18px;
+            justify-content: center;
+            margin-left: 45%;
+            margin-top: 1%;
+            width: 8%;
+            text-decoration: none;
+            color: #fff;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .TV-AV-content {
+            display: flex;
+            flex-direction: column;
+            /* top: 50%; */
+            justify-content: center;
+            margin-top: 26.4%;
+            /* left: 50%; */
+            /* transform: translate(30%, 98%); */
+        }
+
+
+        .home-appliances-content h1 {
+            font-size: 52px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #fff;
+            margin-bottom: 3%;
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .home-appliances-content ul {
+            display: flex;
+            gap: 5%;
+            justify-content: center;
+        }
+
+        .home-appliances-content ul li {
+            list-style: none;
+            padding: 1.2% 1.2% 1.2%;
+            /* padding-left: 8px; */
+        }
+
+        .home-appliances-content ul li:nth-child(1) {
+            border-bottom: 3px solid #fff;
+        }
+
+        .home-appliances-content ul li:nth-child(2):hover {
+            background-color: rgba(119, 119, 119, 0.747);
+            opacity: 5;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .home-appliances-content ul li:nth-child(3):hover {
+            background-color: rgba(119, 119, 119, 0.747);
+            opacity: 5;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .home-appliances-content ul li:nth-child(4):hover {
+            background-color: rgba(119, 119, 119, 0.747);
+            opacity: 5;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .home-appliances-content ul li a {
+            text-decoration: none;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .jet h1 {
+            font-size: 52px;
+            color: #fff;
+            margin-bottom: 3%;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            display: flex;
+            justify-content: center;
+            /* margin: 10%; */
+        }
+
+        .jet article {
+            font-size: 22px;
+            display: flex;
+            margin-bottom: 1.5%;
+            color: #fff;
+            justify-content: center;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .jet p {
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 2%;
+            justify-content: center;
+            display: flex;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .button-jet a {
+            text-decoration: none;
+            padding: 1.1% 1% 1.1%;
+        }
+
+        .button-jet a:first-child {
+            border-bottom: 3px solid #fff;
+            color: #fff;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .button-jet a:nth-child(2) {
+            background-color: #fff;
+            border-radius: 20px;
+            color: #000;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .button-jet a:nth-child(2):hover {
+            background-color: rgba(119, 119, 119, 0.747);
+            color: #fff;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .button-jet {
+            display: flex;
+            gap: 3%;
+            justify-content: center;
+        }
+
+        .samsung-jet {
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+            margin-top: 18%;
+        }
+
+        .home-appliances-content {
+            display: flex;
+            gap: 5%;
+            flex-direction: column;
+        }
+
+        .home-appliances {
+            background: url(/homeAppliances.jpeg);
+            background-size: cover;
+            height: 100vh;
+            /* margin-top: 3%; */
+        }
+
+        /* .home-appliances-content h1:hover { */
+        /* animation-name: home-appliances-content; */
+        /* animation-duration: .3s; */
+        /* } */
+
+        /* .home-appliances:hover { */
+        /* animation-name: home-appliances-content; */
+        /* animation-duration: .2s; */
+        /* } */
+
+
+        .solve,
+        .fitness,
+        .screens,
+        .hosting,
+        .festive {
+            display: flex;
+            flex-direction: column;
+            /* gap: 5%; */
+            height: 20%;
+        }
+
+        .solve a,
+        .fitness a,
+        .screens a,
+        .hosting a,
+        .festive a {
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 5%;
+            display: none;
+            color: #000;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+        }
+
+        .solve h2,
+        .fitness h2,
+        .screens h2,
+        .hosting h2,
+        .festive h2 {
+            font-family: 'SamsungSharpSans', arial, sans-serif;
+        }
+
+        .solve:hover a,
+        .fitness:hover a,
+        .screens:hover a,
+        .hosting:hover a,
+        .festive:hover a {
+            border-bottom: 3px solid #000;
+            display: block;
+            width: 13%;
+        }
+
+        .solve:hover,
+        .fitness:hover,
+        .screens:hover,
+        .hosting:hover,
+        .festive:hover {
+            border-top: 5px solid black;
+            max-height: 24%;
+        }
+
+        .list-1 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 6%;
+            gap: 5%;
+        }
+
+        .explore-content h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 52px;
+            margin-top: 5%;
+            margin-bottom: 3%;
+            font-family: 'SamsungSharpSans', arial, sans-serif;
+        }
+
+        .explore {
+            display: flex;
+            justify-content: center;
+            gap: 4%;
+        }
+
+        .solve-tomorrow img {
+            border-radius: 20px;
+        }
+
+        .solve-tomorrow img:hover {
+            transform: scale(1.05);
+        }
+
+
+        .search {
+            display: flex;
+            gap: 3%;
+            padding-top: 1, 5%;
+            padding-bottom: 1, 5%;
+            padding-right: 1.5%;
+            padding-left: 1.5%;
+            width: 40%;
+            background-color: #f1f3f5;
+            border-radius: 20px;
+            border-top: 2px solid #ced4da;
+            border-bottom: 2px solid #ced4da;
+            border-left: 2px solid #ced4da;
+            border-right: 2px solid #ced4da;
+            /* justify-content: center; */
+        }
+
+        .search p {
+            font-size: 16px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            color: #adb5bd;
+        }
+
+        .search i {
+            margin-top: 2%;
+        }
+
+        .looking h1 {
+            font-size: 52px;
+            font-family: 'SamsungSharpSans', arial,
+                sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+
+        /* @keyframes home-appliances-content { */
+        /* 0% { */
+        /* transform: translateX(-100px); */
+        /* } */
+
+        /* 80% { */
+        /* transform: translateX(20px); */
+        /* } */
+
+        /* 100% { */
+        /* transform: translateX(0); */
+        /* } */
+
+        /* } */
+
+
+
+        @media only screen and (max-width:900px) {
+            .brand h1 {
+                font-size: 22px;
+            }
+
+            .support ul li {
+                display: block;
+                margin-top: 10px;
+
+            }
+
+            .support ul li a {
+                display: none;
+            }
+
+            .brand ul li a {
+                display: none;
+            }
+
+            .brand ul li {
+                display: block;
+                margin-top: 10px;
+
+            }
+
+            #list {
+                overflow: hidden;
+                transition: 0.5s;
+            }
+
+            .list {
+                display: block;
+            }
+
+            .support li img {
+                display: none;
+            }
+
+            .price {
+                display: flex;
+                margin-left: -6%;
+                /* margin-bottom: 4%; */
+            }
+
+            .samsung-background-1 h1 {
+                font-size: 26px;
+
+            }
+
+            .samsung-background-1 h4 {
+                font-size: 15px;
+
+            }
+
+            .samsung-background-1 a {
+                padding: 3px 7.5px 3px;
+                background-color: #fff;
+                border-radius: 9px;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="brand">
+            <h1>SAMSUNG</h1>
+            <ul id="menulist">
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">TV & AV</a></li>
+                <li><a href="#">Home Appliances</a></li>
+                <li><a href="#">Laptop & Monitors</a></li>
+                <li><a href="#">Display Offers</a></li>
+            </ul>
+        </div>
+        <div class="support">
+            <ul id="menulist">
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">For Buisness</a></li>
+                <li><img src="user.png" alt=""></li>
+            </ul>
+
+        </div>
+        <img class="list" src="list-fill.png" alt="">
+    </nav>
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px"
+
+        function togglemenu() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "130px"
+            }
+            else {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <div class="samsung-background">
+        <div class="samsung-background-1">
+
+            <h1>QLED 4K Smart TV</h1>
+            <div class="brand">
+                <div class="start">
+                    <h4>Starting</h4>
+                </div>
+                <div class="price">
+                    <img src="currency-inr.png" alt="">
+                    <h4>112990</h4>
+                </div>
+            </div>
+            <a class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="highlights">
+        <div class="heading">
+            <h1>This Week's Highlights</h1>
+        </div>
+        <div class="flex-1">
+            <ul>
+                <li><a href="#">New-in</a></li>
+                <li><a href="#">Students offers</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Appliances</a></li>
+                <li><a href="#">Galaxy Ecosystem</a></li>
+            </ul>
+        </div>
+
+        <div class="flex-5">
+
+            <div class="galaxy-M53">
+                <!-- <div class="galaxy-M53-heading-1"> -->
+                <!-- <h2>Samsung Live presents</h2> -->
+                <!-- <h1>Galaxy M53|M33 5G</h1> -->
+                <!-- </div> -->
+                <div class="galaxy-M53-heading-2">
+                    <h1>Avail benefits up to Rupees 4750*</h1>
+                    <h3>Offers valid till midnight!</h3>
+                    <a href="#">Buy now</a>
+                </div>
+
+            </div>
+            <div class="flex-4">
+                <div class="flex-2">
+
+                    <div class="laptops">
+                        <div class="laptops-content">
+                            <h1>Laptop Days <br> Deals you just can't miss!</h1>
+                            <h3>Additional Rupees 5000 off on prepaid orders</h3>
+                            <a href="#">Buy now</a>
+                        </div>
+                    </div>
+
+                    <div class="Galaxy-F13">
+                        <div class="Galaxy-F13-content">
+                            <h1>Galaxy F13 <br> Starting Rupees 10999*</h1>
+                            <h3>6000 mAh Battery with 15W Fast Charging</h3>
+                            <a href="#">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-3">
+
+                    <div class="samsung-live">
+                        <div class="samsung-live-content">
+                            <h1>Galaxy Tab S6 Lite <br> Avail benefits up to rupees 11490*</h1>
+                            <h3>visit Samsung on 8th july at 12pm</h3>
+                            <a href="#">Buy now</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="crystal-4k"> -->
+                    <!-- <div class="crystal-4k-content"> -->
+                    <!-- <div class="crystal-4k-content-1"></div> -->
+                    <!-- <h1>AUE65 Crystal 4K <br> Starting at 36990*</h1> -->
+                    <!-- <h3>Additional 750 off on Samsung Shop App</h3> -->
+                    <!-- <a href="#">Buy now</a> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="mobile">
+        <div class="heading-1">
+            <div class="subheading">
+                <h1>Mobile</h1>
+            </div>
+            <ul>
+                <li><a href="#">Galaxy Z Fold | Flip3 5G</a></li>
+                <li><a href="#">Galaxy A53 5G</a></li>
+                <li><a href="#">Laptop Days</a></li>
+                <li><a href="#">Galaxy S22|S22+</a></li>
+                <li><a href="#">Galaxy M33 5G</a></li>
+            </ul>
+        </div>
+
+        <div class="fold-img">
+            <img src="/foldimg-1.jpg" height="200px" width="300px" alt="">
+            <img src="/foldimg-3.webp" height="200px" width="300px" alt="">
+            <img src="/foldimg.jpg" height="200px" width="300px" alt="">
+            <img src="/foldimg-4.jpg" height="200px" width="300px" alt="">
+        </div>
+
+        <div class="fold-description">
+            <h1>Galaxy Z Fold3 | Flip3 5G</h1>
+            <div class="button">
+                <a href="#">Buy Galaxy Z Fold3 5G</a>
+                <a href="#">Buy Galaxy Z Flip 5G</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="TV-AV">
+        <div class="TV-AV-content-1">
+            <h1>TV & AV</h1>
+            <ul>
+                <li><a href="#">QLED 4K</a></li>
+                <li><a href="#">Neo QLED 8K</a></li>
+                <li><a href="#">Crystal 4K UHD</a></li>
+                <li><a href="#">The Frame</a></li>
+                <li><a href="#">The Serif</a></li>
+            </ul>
+        </div>
+        <div class="TV-AV-content">
+            <h1>QLED 4K</h1>
+            <p>Rupees 3000 off* on Samsung App 10 years pixel burnout warranty </p>
+            <a href="#">Buy now</a>
+        </div>
+    </div>
+
+    <div class="home-appliances">
+        <div class="home-appliances-content">
+            <h1>Home Appliances</h1>
+            <ul>
+                <li><a href="#">Vacuum Cleaners</a></li>
+                <li><a href="#">AI Ecobubble</a></li>
+                <li><a href="#">WindFree AC</a></li>
+                <li><a href="#">Curd Maestro</a></li>
+            </ul>
+        </div>
+        <div class="samsung-jet">
+            <div class="jet">
+                <h1>Samsung Jet</h1>
+                <article>A hygiene solution for your home</article>
+                <p>Traps 99.999%* fine dust| 200W suction power| High capacity battery</p>
+            </div>
+            <div class="button-jet">
+                <a href="#">Watch video</a>
+                <a href="#">Buy now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-content">
+        <h1>Explore #DoWhatYouCant</h1>
+    </div>
+    <div class="explore">
+        <div class="solve-tomorrow">
+            <img src="/solve.jpeg" alt="">
+        </div>
+        <div class="list-1">
+            <div class="solve">
+                <h2>Solve for Tomorrow</h2>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="fitness">
+                <h2>Use Fitness Tracker to Fuel Your Motivation ,
+                    Not Your Anxiety</h2>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="screens">
+                <h2>Screens Everywhere,Screens for All</h2>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="hosting">
+                <h2>3 Hosting Tips to Alleviate Holiday Stress</ h2>
+                    <a href="#">Learn more</a>
+            </div>
+            <div class="festive">
+                <h2>Indian's Festive Season Purchase Latest
+                    Samrtphones</h2>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="searching"> -->
+    <!-- <div class="looking"> -->
+    <!-- <h1>Looking for something else?</h1> -->
+    <!-- </div> -->
+    <!-- <div class="search-1"> -->
+    <!-- <div class="search"> -->
+    <!-- <i><svg xmlns="http://www.w3.org/ -->
+    <!-- <!-- 2000/svg" width="17px" height="17px" fill="#9696a2" viewBox="0 0 256 256"> --> -->
+    <!-- <!-- <rect width="256" height="256" fill="none"> --> -->
+    <!-- </ rect> -->
+    <!-- <!-- <!-- <circle cx="116" cy="116" r="84" fill="none" stroke="#9696a2" stroke-linecap="round" --> --> -->
+    <!-- <!-- stroke-linejoin="round" stroke-width="16"> --> -->
+    <!-- </ circle> -->
+    <!-- <!-- <!-- <line x1="175.4" y1="175.4" x2="224" y2="224" fill="none" stroke="#9696a2" --> --> -->
+    <!-- <!-- <!-- stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line> --> --> -->
+    <!-- </svg></i> -->
+    <!-- <p>Search Keyword</p> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="searching-content-1"> -->
+    <!-- <ul> -->
+    <!-- <li><a href="#">Galaxy S22 Ultra</ a> -->
+    <!-- </li> -->
+    <!-- <li><a href="#">Galaxy Note20</a></ li> -->
+    <!-- <li><a href="#">QLED 8K</a></li> -->
+    <!-- <li><a href="#">UHD TVs</a></li> -->
+    <!-- <li><a href="#">Eco bubble</a></li> -->
+    <!-- </ul> -->
+    <!-- </div> -->
+    <!-- <div class="searching-content-2"> -->
+    <!-- <ul> -->
+    <!-- <li><a href="#">Curd Maestro</a></li> -->
+    <!-- <li><a href="#">Smart Monitors</a></ li> -->
+    <!-- </ul> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+
+</body>
+
+</html>
